@@ -1,0 +1,3 @@
+## Installation
+
+drop this file in `~/.emacs.d` and call `load-theme` respectively. Enjoy...
