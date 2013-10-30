@@ -26,9 +26,8 @@
 (let ((class '((class color) (min-colors 89)))
     (default_fg "#d0d0d0") (default_bg "#202020")
     (cursor_line_bg "#3a3a3a")
-    (inc_search_fg "black") (inc_search_bg "#ffdfaf")
+    (inc_search_fg "black") (inc_search_bg "#80aa2a")
     (non_text_fg "#a8a8a8")
-    (search_fg "black") (search_bg "ffdfaf")
     (visual_fg "brightwhite") (visual_bg "brightblue")
     (wild_menu_fg "black") (wild_menu_fg "#dfdf00")
     ; syntax highlighting
@@ -61,7 +60,7 @@
    ;; Highlighting faces
    `(highlight ((,class (:foreground "black" :background "brightyellow"))))
    `(region ((,class (:background ,visual_bg :foreground ,visual_fg))))
-   `(isearch ((,class (:foreground ,search_fg :background ,search_bg))))
+   `(isearch ((,class (:foreground ,inc_search_fg :background ,inc_search_bg))))
    `(lazy-highlight ((,class (:background ,visual_bg :foreground ,visual_fg))))
    `(trailing-whitespace ((,class (:background "red"))))
    ;; Mode line faces
