@@ -48,7 +48,8 @@
     (number_fg "#dfaf87")
     (success_fg "#2a2ad4")
     (warning_fg "#aa552a")
-    (mode_inactive_fg "#eeeeee") (mode_inactive_bg "#6c6c6c")
+    (status_line_fg "brightwhite") (status_line_bg "#4e4e4e")
+    (status_line_NC_fg "#b2b2b2") (status_line_NC_bg "#3a3a3a")
     (underlined_fg "#0080d4"))
 
   (custom-theme-set-faces
@@ -65,11 +66,11 @@
    `(trailing-whitespace ((,class (:background "red"))))
    ;; Mode line faces
    `(mode-line ((,class
-		 (:box (:line-width -1 :style released-button)
-		  :background ,default_bg :foreground ,default_fg))))
+         (:box (:line-width -1 :style released-button)
+          :background ,status_line_bg :foreground ,status_line_fg))))
    `(mode-line-inactive ((,class
-			  (:box (:line-width -1 :style released-button)
-			   :background ,mode_inactive_bg :foreground ,mode_inactive_fg))))
+              (:box (:line-width -1 :style released-button)
+               :background ,status_line_NC_bg :foreground ,status_line_NC_fg))))
    `(compilation-mode-line-fail ((,class (:foreground "brightred"))))
    `(compilation-mode-line-run  ((,class (:foreground "brightyellow"))))
    `(compilation-mode-line-exit ((,class (:foreground "brightgreen"))))

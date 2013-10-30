@@ -40,15 +40,16 @@
     (number_fg "color-180")
     (success_fg "color-63")
     (warning_fg "color-173")
-    (mode_inactive_fg "color-255") (mode_inactive_bg "color-242")
+    (status_line_fg "brightwhite") (status_line_bg "color-239")y
+    (status_line_NC_fg "color-249") (status_line_NC_bg "color-237")
     (underlined_fg "color-39"))
 
   (custom-theme-set-faces
    'xoria256
    ;; Ensure sufficient contrast on low-color terminals.
    `(default (
-	      (((class color) (min-colors 256))
-	       (:foreground ,default_fg  :background ,default_bg))))
+          (((class color) (min-colors 256))
+           (:foreground ,default_fg  :background ,default_bg))))
    ;; Highlighting faces
    `(highlight ((,class (:foreground "black" :background "brightyellow"))))
    `(region ((,class (:background ,visual_bg :foreground ,visual_fg))))
@@ -57,11 +58,11 @@
    `(trailing-whitespace ((,class (:background "red"))))
    ;; Mode line faces
    `(mode-line ((,class
-		 (:box (:line-width -1 :style released-button)
-		  :background ,default_bg :foreground ,default_fg))))
+         (:box (:line-width -1 :style released-button)
+          :background ,status_line_bg :foreground ,status_line_fg))))
    `(mode-line-inactive ((,class
-			  (:box (:line-width -1 :style released-button)
-			   :background ,mode_inactive_bg :foreground ,mode_inactive_fg))))
+              (:box (:line-width -1 :style released-button)
+               :background ,status_line_NC_bg :foreground ,status_line_NC_fg))))
    `(compilation-mode-line-fail ((,class (:foreground "brightred"))))
    `(compilation-mode-line-run  ((,class (:foreground "brightyellow"))))
    `(compilation-mode-line-exit ((,class (:foreground "brightgreen"))))
