@@ -84,7 +84,7 @@
    `(font-lock-preprocessor-face ((,class (:foreground ,preproc_fg))))
    `(font-lock-number-face ((,class (:foreground ,number_fg))))
    `(hl-line ((,class (:background ,cursor_line_bg))))
-   `(linum-highlight-face ((,class (:foreground "brightyellow" :background ,cursor_line_bg))))
+   `(linum-highlight-face ((,class (:foreground "brightyellow" :background ,default_bg))))
    `(show-paren-match ((,class (:foreground ,visual_fg :background ,visual_bg))))
    )
 
